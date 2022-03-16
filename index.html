@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VacuNation</title>
     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./styles/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- Bootstrap JS -->
@@ -36,25 +37,23 @@
         <!-- =================== NAV =================== -->
         <div class="row my-5 align-items-center">
             <div class="col-2 offset-1">
-                <a class="navbar-brand text_vacunacion fs-2" style="font-family: 'Montserrat', sans-serif; color: #2f4fcd;"
-                    href="#fight">Vaccination</a>
+                <a class="navbar-brand text_vacunacion fs-2" id="a1" href="#fight">Vaccination</a>
             </div>
             <div class="col-2"></div>
             <div class="col-1">
-                <a class="nav-link fs-5 " href="#home3"style="font-family: 'Montserrat', sans-serif; color: #6d7b93;">Database</a>
+                <a class="nav-link fs-5 " id="nav-options" href="#home3">Database</a>
             </div>
             <div class="col-1">
-                <a class="text-start fs-5 " href="#home4" style="font-family: 'Montserrat', sans-serif; color: #6d7b93; text-decoration: none;">Education</a>
+                <a class="text-start fs-5 " id="nav-options" href="#home4" >Education</a>
             </div>
             <div class="col-1">
-                <a class="nav-link text-center fs-5" href="#home5" style="font-family: 'Montserrat', sans-serif; color: #6d7b93;">News</a>
+                <a class="nav-link text-center fs-5" id="nav-options" href="#home5" >News</a>
             </div>
             <div class="col-1">
-                <a class="nav-link text-start fs-5" href="#home6" style="font-family: 'Montserrat', sans-serif; color: #6d7b93;">Regulation</a>
+                <a class="nav-link text-start fs-5" id="nav-options" href="#home6" >Regulation</a>
             </div>
             <div class="col-2 ms-5">
-                <button class="align-self-center btn py-3 px-5 fs-4" style="font-family: 'Montserrat', sans-serif; color: white; background-color: #2f4fcd;"
-                    type="submit">Hoax Buster</button>
+                <button class="align-self-center btn py-3 px-5 fs-4" id="btn-nav" type="submit">Hoax Buster</button>
             </div>
         </div>
         <!-- =================== NAV =================== -->
@@ -67,21 +66,18 @@
                         <div class="col-1"></div>
                         <div class="col-9 ">
                             <br>
-                            <h1 class="text-start text-capitalize display-1 mb-3" id="fight" style="font-family: 'Montserrat', sans-serif; color: #1f3e72;"><br> fight virus</h1>
-                            <h1 class="text-start text-capitalize display-1 mb-5" style="font-family: 'Montserrat', sans-serif; color: #1f3e72;">with vaccines</h1>
-                            <p class="fs-4 lh-lg" style="font-family: 'Poppins', sans-serif; color: #61718a;">Let's stop this pandemic by killing the virus <br> with a vaccine, don't let yourself and your <br>family get infected</p><br>
+                            <h1 class="text-start text-capitalize display-1 mb-3" id="fight"><br> fight virus</h1>
+                            <h1 class="text-start text-capitalize display-1 mb-5" id="fight">with vaccines</h1>
+                            <p class="fs-4 lh-lg" id="txt-poppins">Let's stop this pandemic by killing the virus <br> with a vaccine, don't let yourself and your <br>family get infected</p><br>
                             <div class="container-fluid mt-3 mb-5 ">
-                                <div class="row mt-4 mb-4 " style="font-family: 'Poppins', sans-serif; color: #1f3e72;">
-                                    <div class="col-5 h5 text-start"><i class="bi bi-shield-fill-check" style="color: yellow;"></i>Best protection</div>
-                                    <div class="col-6 h5 text-start"><i class="bi bi-star-fill" style="color: yellow;"></i>Selected Vaccines <br><br></div>
+                                <div class="row mt-4 mb-4 " id="txt-poppins-blue">
+                                    <div class="col-5 h5 text-start"><i class="bi bi-shield-fill-check" id="opt-y" ></i>Best protection</div>
+                                    <div class="col-6 h5 text-start"><i class="bi bi-star-fill" id="opt-y" ></i>Selected Vaccines <br><br></div>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-12 text-capitalize fs-3" style="font-family: 'Montserrat', sans-serif; color: #1f3e72;">
-                                    <i class="bi bi-clock-fill shadow border border-white me-3 px-1 rounded px-2 py-1"
-                                        style="font-size: 1.5rem; color: #3454d2; background-color: #f0f4ff;"></i>schedule your vaccinations
-                                    <h1 class=" text-start  mb-0">
-                                    </h1>
+                                <div class="col-12 text-capitalize fs-3" id="fight" >
+                                    <i class="bi bi-clock-fill shadow border border-white me-3 px-1 rounded px-2 py-1" id="icon-blue"></i>schedule your vaccinations
                                 </div>                      
                             </div>
                         </div>
@@ -89,59 +85,45 @@
                     </div>
                 </div>
             </div>
-            <div class="col-6 vh-100" style="background-color: #0156CA;">
-                <img src="./enfermera.jpg" class=" " alt="" style="width: 100%; height: 100%; object-fit: cover; ">
+            <div class="col-6 vh-100" id="div-nurse">
+                <img src="./enfermera.jpg" alt="nurse" id="nurse1">
             </div>
-            <!-- <div class="col-6 position-relative" style="background-color: #138be3;">
-                <img src="./nurse.png" class="w-100 mt-5 position-absolute top-50 start-50 translate-middle" alt="">
-            </div> -->
         </div>
         <!-- =================== Banner =================== -->
-        <div class="container-fluid shadow bg-light rounded-3 p-5 position-absolute"
-            style="width: 65%; left: 10%; margin-top: -10%; margin-bottom: 10%;" id="banner1">
+        <div class="container-fluid shadow bg-light rounded-3 p-5 position-absolute" id="banner1">
             <div class="row">
                     <div class="container-fluid">
-                        <div class="row fs-4" style="font-family: 'Poppins', sans-serif; color: #61718a;">
+                        <div class="row fs-4" id="txt-poppins">
                             <div class="col-3 align-self-center text-start" >
-                                <i class="bi bi-geo-alt-fill shadow me-3 px-1 rounded px-2 py-1" style="font-size: 1.5rem; color: #3454d2; background-color: #f0f4ff;"></i>Location <br>
+                                <i class="bi bi-geo-alt-fill shadow me-3 px-1 rounded px-2 py-1" id="icon-blue"></i>Location <br>
                                 <div class="row text-center ms-2">
-                                    <label class="text-capitalize ps-4 fs-3" style="font-family: 'Montserrat', sans-serif; color: #1f3e72;">jakarta utara</label>
+                                    <label class="text-capitalize ps-4 fs-3" id="fight">jakarta utara</label>
                                 </div>
                             </div>
                             <div class="col-3 align-self-center text-start">
-                                <i class="bi bi-calendar2-week-fill shadow me-3 px-1 rounded px-2 py-1"style="font-size: 1.5rem; color: #3454d2; background-color: #f0f4ff;"></i>Date <br>
+                                <i class="bi bi-calendar2-week-fill shadow me-3 px-1 rounded px-2 py-1" id="icon-blue"></i>Date <br>
                                 <div class="row text-center ">
-                                    <label class="text-capitalize ps-4 fs-3" style="font-family: 'Montserrat', sans-serif; color: #1f3e72;">08 july 2021</label>
+                                    <label class="text-capitalize ps-4 fs-3" id="fight">08 july 2021</label>
                                 </div>
                             </div>
                             <div class="col-3 align-self-center text-start">
-                                <i class="bi bi-pencil-fill shadow me-3 px-1 rounded px-2 py-1"style="font-size: 1.5rem; color: #3454d2; background-color: #f0f4ff;"></i>Vaccine Type <br>
-                                <div class="row text-end " style="margin-right: 25%;">
+                                <i class="bi bi-pencil-fill shadow me-3 px-1 rounded px-2 py-1" id="icon-blue"></i>Vaccine Type <br>
+                                <div class="row text-end " id="moderna" >
                                     <div class="col-3"></div>
-                                    <label class="text-capitalize fs-3 " style="font-family: 'Montserrat', sans-serif; color: #1f3e72;">moderna</label>
+                                    <label class="text-capitalize fs-3 " id="fight">moderna</label>
                                 </div>
                             </div>
-                            <div class="col-3 align-self-center text-center"><button class="btn py-3 px-5 mx-5 fs-3"style="font-family: 'Montserrat', sans-serif; color: white; background-color: #2f4fcd;"type="submit">Submit</button></div>
+                            <div class="col-3 align-self-center text-center"><button class="btn py-3 px-5 mx-5 fs-3" id="btn-nav" type="submit">Submit</button></div>
                         </div>
                     </div>  
             </div>
         </div>
-        <div class="position-absolute" id="tri_1"
-            style=" width: 0; height: 0;
-      border-left: 100px solid transparent;
-      border-right: 100px solid transparent;
-      border-top: 100px solid #f4f6fb; margin-top: -50.2%; margin-left: 4.4%;">
-        </div>
-        <div class="position-absolute" id="tri_2" style=" width: 0; height: 0;
-      border-top: 150px solid transparent;
-      border-right: 150px solid #f4f6fb;
-      border-bottom: 150px solid transparent; margin-top: -25.6%; margin-left: 41.5%;">
-        </div>
+        <div class="position-absolute" id="tri_1"></div>
+        <div class="position-absolute" id="tri_2"></div>
         <!-- =================== Banner =================== -->
     </section>
     <!-- =================== HOME 1 =================== -->
-
-
+    <!-- =================== BRANDS VACCINES =================== -->
     <section id="home2" class="container-fluid py-5 my-5">
         <div class="container-fluid ">
             <div class="row">
@@ -166,6 +148,7 @@
             </div>
         </div>
     </section>
+    <!-- =================== BRANDS VACCINES =================== -->
     <!-- =================== Why Should =================== -->
     <section id="home3" class="container-fluid position-relative">
         <div class="row vh-100">
@@ -173,54 +156,44 @@
                 <div class="container-fluid vh-100 ">
                     <div class="row vh-100 ">
                         <div class="col-12 ">
-                            <h1 class="text-start display-5 mb-0"
-                                style="font-family: 'Montserrat', sans-serif; color: #1f3e72;" id="why">Why should I vaccine?</h1>
-                            <p class="fs-4 lh-lg mt-5" style="font-family: 'Poppins', sans-serif; color: #61718a;">In order to avoid any doubts about getting the COVID-19<br>vaccine, identify the following 4 benefits of COVID-19<br>vaccination:</p><br>
+                            <h1 class="text-start display-5 mb-0" id="fight">Why should I vaccine?</h1>
+                            <p class="fs-4 lh-lg mt-5" id="txt-poppins">In order to avoid any doubts about getting the COVID-19<br>vaccine, identify the following 4 benefits of COVID-19<br>vaccination:</p><br>
                             <div class="row">
-                                <div class="col-12 " style="font-family: 'Montserrat', sans-serif; color: #1f3e72;">
+                                <div class="col-12 ">
                                     <div class="row">
                                         <div class="col-3">
-                                            <div class="card border-0 shadow" style="width: 22rem; height: 27rem;">
+                                            <div class="card border-0 shadow" id="card-size">
                                                 <div class="card-body mt-4 ms-4 ">
-                                                    <i class="bi bi-sliders shadow border border-white border-3 rounded-3 px-3 py-2"
-                                                        style="font-size: 2rem; color: #3454d2; background-color: #f0f4ff;"></i>
-                                                    <h5 class="card-title fs-3 mt-5 me-3" style="font-family: 'Poppins', sans-serif; color: #1f3e72;">Minimize the spread of viruses</h5>
-                                                    <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
-                                                    <p class="card-text lh-lg fs-5 mt-3" style="font-family: 'Poppins', sans-serif; color: #61718a;">Vaccine has been proven effective to prevent someone from getting infected with Coronavirus</p>
+                                                    <i class="bi bi-sliders shadow border border-white border-3 rounded-3 px-3 py-2" id="icon-blue-x"></i>
+                                                    <h5 class="card-title fs-3 mt-5 me-3" id="txt-poppins-blue">Minimize the spread of viruses</h5>
+                                                    <p class="card-text lh-lg fs-5 mt-3" id="txt-poppins">Vaccine has been proven effective to prevent someone from getting infected with Coronavirus</p>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-3">
-                                            <div class="card border-0 shadow" style="width: 22rem; height: 27rem;">
+                                            <div class="card border-0 shadow" id="card-size">
                                                 <div class="card-body mt-4 ms-4 ">
-                                                    <i class="bi bi-shield-fill-check shadow border border-white border-3 rounded-3 px-3 py-2"
-                                                        style="font-size: 2rem; color: #3454d2; background-color: #f0f4ff;"></i>
-                                                    <h5 class="card-title fs-3 mt-5 me-3" style="font-family: 'Poppins', sans-serif; color: #1f3e72;">Forming antibodies
-                                                        spread of viruses</h5>
-                                                    <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
-                                                    <p class="card-text lh-lg fs-5 mt-3" style="font-family: 'Poppins', sans-serif; color: #61718a;">COVID-19 vaccine proven to help shape antibody response for immune system</p>
+                                                    <i class="bi bi-shield-fill-check shadow border border-white border-3 rounded-3 px-3 py-2" id="icon-blue-x"></i>
+                                                    <h5 class="card-title fs-3 mt-5 me-3" id="txt-poppins-blue">Forming antibodies spread of viruses</h5>
+                                                    <p class="card-text lh-lg fs-5 mt-3" id="txt-poppins">COVID-19 vaccine proven to help shape antibody response for immune system</p>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-3">
-                                            <div class="card border-0 shadow" style="width: 22rem; height: 27rem;">
+                                            <div class="card border-0 shadow" id="card-size">
                                                 <div class="card-body mt-4 ms-4 ">
-                                                    <i class="bi bi-people-fill shadow border border-white border-3 rounded-3 px-3 py-2"
-                                                        style="font-size: 2rem; color: #3454d2; background-color: #f0f4ff;"></i>
-                                                    <h5 class="card-title fs-3 mt-5 me-3" style="font-family: 'Poppins', sans-serif; color: #1f3e72;">Protecting people nearby</h5>
-                                                    <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
-                                                    <p class="card-text lh-lg fs-5 mt-3" style="font-family: 'Poppins', sans-serif; color: #61718a;">The benefits of COVID-19 vaccination are the vaccine that we get can also help protect people around us</p>
+                                                    <i class="bi bi-people-fill shadow border border-white border-3 rounded-3 px-3 py-2" id="icon-blue-x"></i>
+                                                    <h5 class="card-title fs-3 mt-5 me-3" id="txt-poppins-blue">Protecting people nearby</h5>
+                                                    <p class="card-text lh-lg fs-5 mt-3" id="txt-poppins">The benefits of COVID-19 vaccination are the vaccine that we get can also help protect people around us</p>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-3">
-                                            <div class="card border-0 shadow" style="width: 22rem; height: 27rem;">
+                                            <div class="card border-0 shadow" id="card-size">
                                                 <div class="card-body mt-4 ms-4 ">
-                                                    <i class="bi bi-graph-up-arrow shadow border border-white border-3 rounded-3 px-3 py-2"
-                                                        style="font-size: 2rem; color: #3454d2; background-color: #f0f4ff;"></i>
-                                                    <h5 class="card-title fs-3 mt-5 me-3" style="font-family: 'Poppins', sans-serif; color: #1f3e72;">Creating group immunity</h5>
-                                                    <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
-                                                    <p class="card-text lh-lg fs-5 mt-3" style="font-family: 'Poppins', sans-serif; color: #61718a;">COVID-19 vaccination is also beneficial for creating group immunity or herd immunity</p>
+                                                    <i class="bi bi-graph-up-arrow shadow border border-white border-3 rounded-3 px-3 py-2" id="icon-blue-x"></i>
+                                                    <h5 class="card-title fs-3 mt-5 me-3" id="txt-poppins-blue">Creating group immunity</h5>
+                                                    <p class="card-text lh-lg fs-5 mt-3" id="txt-poppins">COVID-19 vaccination is also beneficial for creating group immunity or herd immunity</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -236,11 +209,7 @@
                 
             </div>
         </div>
-        <div class="position-absolute" id="tri_3" style=" width: 0; height: 0;
-              border-top: 150px solid transparent;
-              border-right: 150px solid #f4f6fb;
-              border-bottom: 150px solid transparent; margin-top: -55.5%; margin-left: 91.5%;">
-        </div>
+        <div class="position-absolute" id="tri_3"></div>
     </section>
     <!-- =================== Why Should =================== -->
 
@@ -248,25 +217,24 @@
     <section id="home4" class="container-fluid position-relative vh-100 mb-5 mt-5">
         <div class="row vh-100 ">
             <div class="col-5 vh-100" >
-                <img src="./nurse.png" class=" " alt="" style="width: 100%; height: 100%; object-fit: cover; ">
+                <img src="./nurse.png" alt="nurse" id="nurse">
             </div>
             <div class="col-7">
                 <div class="container-fluid vh-100 ">
                     <div class="row vh-100 ">
                         <div class="col-1"></div>
                         <div class="col-10">
-                            <h1 class="text-start text-capitalize display-5 mb-0" style="font-family: 'Montserrat', sans-serif; color: #1f3e72;" id="prepar">Preparations before vaccine</h1>
-                            <p class="fs-4 lh-lg mt-5" style="font-family: 'Poppins', sans-serif; color: #61718a;">the success of vaccines is strongly influenced by the <br>strength of the body's immune system. Therefore, there are<br>several things that can be tried to make the COVID-19 <br>vaccine work:</p><br>
+                            <h1 class="text-start text-capitalize display-5 mb-0"  id="fight">Preparations before vaccine</h1>
+                            <p class="fs-4 lh-lg mt-5" id="txt-poppins">the success of vaccines is strongly influenced by the <br>strength of the body's immune system. Therefore, there are<br>several things that can be tried to make the COVID-19 <br>vaccine work:</p><br>
                             <div class="container-fluid mt-3 mb-5 ">
                                 <div class="row">
                                     <div class="col-9">
                                         <div class="accordion accordion-flush border border-0 shadow rounded-3" id="accordionFlushExample">
                                             <div class="accordion-item">
                                                 <h2 class="accordion-header" id="flush-headingOne">
-                                                    <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse"
-                                                        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne" style="font-family: 'Poppins', sans-serif; color: #1f3e72;">
-                                                        <i class="bi bi-shield-fill-x shadow border border-white border-3 rounded-3 px-2 pt-2 pb-1 me-4"
-                                                            style="font-size: 1.5rem; color: #3454d2; background-color: #f0f4ff;"></i>Avoid alcoholic beverages
+                                                    <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne" id="txt-poppins-blue">
+                                                        <i class="bi bi-shield-fill-x shadow border border-white border-3 rounded-3 px-2 pt-2 pb-1 me-4" id="icon-blue"></i>
+                                                        Avoid alcoholic beverages
                                                     </button>
                                                 </h2>
                                                 <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
@@ -277,26 +245,21 @@
                                             </div>
                                             <div class="accordion-item">
                                                 <h2 class="accordion-header" id="flush-headingTwo">
-                                                    <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse"
-                                                        data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo"
-                                                        style="font-family: 'Poppins', sans-serif; color: #1f3e72;">
-                                                        <i class="bi bi-shield-fill-x shadow border border-white border-3 rounded-3 px-2 pt-2 pb-1 me-4"
-                                                            style="font-size: 1.5rem; color: #3454d2; background-color: #f0f4ff;"></i>Avoid stress
+                                                    <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo" id="txt-poppins-blue">
+                                                        <i class="bi bi-x-square-fill shadow border border-white border-3 rounded-3 px-2 pt-2 pb-1 me-4" id="icon-blue"></i>
+                                                        Avoid stress
                                                     </button>
                                                 </h2>
                                                 <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
                                                     data-bs-parent="#accordionFlushExample">
-                                                    <div class="accordion-body" style="font-family: 'Poppins', sans-serif; color: #61718a;">Stress has a profound effect on immune work. <br>
+                                                    <div class="accordion-body" id="txt-poppins">Stress has a profound effect on immune work. <br>
                                                     Moreover, prolonged stress can increase cortisol <br> production and oxidative stress in the body</div>
                                                 </div>
                                             </div>
                                             <div class="accordion-item">
                                                 <h2 class="accordion-header" id="flush-headingThree">
-                                                    <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse"
-                                                        data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree"
-                                                        style="font-family: 'Poppins', sans-serif; color: #1f3e72;">
-                                                        <i class="bi bi-shield-fill-x shadow border border-white border-3 rounded-3 px-2 pt-2 pb-1 me-4"
-                                                            style="font-size: 1.5rem; color: #3454d2; background-color: #f0f4ff;"></i>Eat healthy food
+                                                    <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree" id="txt-poppins-blue">
+                                                        <i class="bi bi-file-bar-graph-fill shadow border border-white border-3 rounded-3 px-2 pt-2 pb-1 me-4" id="icon-blue"></i>Eat healthy food
                                                     </button>
                                                 </h2>
                                                 <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
@@ -309,11 +272,8 @@
                                             </div>
                                             <div class="accordion-item">
                                                 <h2 class="accordion-header" id="flush-headingFour">
-                                                    <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse"
-                                                        data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour"
-                                                        style="font-family: 'Poppins', sans-serif; color: #1f3e72;">
-                                                        <i class="bi bi-shield-fill-x shadow border border-white border-3 rounded-3 px-2 pt-2 pb-1 me-4"
-                                                            style="font-size: 1.5rem; color: #3454d2; background-color: #f0f4ff;"></i>Get enough sleep
+                                                    <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour" id="txt-poppins-blue">
+                                                        <i class="bi bi-check-square-fill shadow border border-white border-3 rounded-3 px-2 pt-2 pb-1 me-4" id="icon-blue"></i>Get enough sleep
                                                     </button>
                                                 </h2>
                                                 <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
@@ -327,11 +287,8 @@
                                             </div>
                                             <div class="accordion-item">
                                                 <h2 class="accordion-header" id="flush-headingFive">
-                                                    <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse"
-                                                        data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive"
-                                                        style="font-family: 'Poppins', sans-serif; color: #1f3e72;">
-                                                        <i class="bi bi-shield-fill-x shadow border border-white border-3 rounded-3 px-2 pt-2 pb-1 me-4"
-                                                            style="font-size: 1.5rem; color: #3454d2; background-color: #f0f4ff;"></i>Excercise or physical activity
+                                                    <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive" id="txt-poppins-blue">
+                                                        <i class="bi bi-heart-fill shadow border border-white border-3 rounded-3 px-2 pt-2 pb-1 me-4" id="icon-blue"></i>Excercise or physical activity
                                                     </button>
                                                 </h2>
                                                 <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive"
@@ -351,14 +308,7 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="col-6 position-relative" style="background-color: #138be3;">
-                    <img src="./nurse.png" class="w-100 mt-5 position-absolute top-50 start-50 translate-middle" alt="">
-                </div> -->
-            <div class="position-absolute" id="tri_4" style=" width: 0;
-                height: 0;
-                border-top: 150px solid transparent;
-                border-left: 150px solid #f4f6fb;
-                border-bottom: 150px solid transparent;margin-top: -6.5%; margin-left: 0%;">
+            <div class="position-absolute" id="tri_4">
             </div>
                 
         </div>
@@ -372,18 +322,16 @@
                 <div class="container-fluid vh-100 ">
                     <div class="row vh-100 ">
                         <div class="col-10">
-                            <h1 class="text-start text-capitalize display-5 mb-0"
-                                style="font-family: 'Montserrat', sans-serif; color: #1f3e72;">emergency contact
-                            </h1>
-                            <p class="fs-4 lh-lg mt-5" style="font-family: 'Poppins', sans-serif; color: #61718a;">Contact one of the contacts below if you or your family feel unwell and have similar symptoms such as Covid-19, make sure you also take care of yourself before reporting to us:</p><br>
+                            <h1 class="text-start text-capitalize display-5 mb-0" id="fight">emergency contact</h1>
+                            <p class="fs-4 lh-lg mt-5" id="txt-poppins">Contact one of the contacts below if you or your family feel unwell and have similar symptoms such as Covid-19, make sure you also take care of yourself before reporting to us:</p><br>
                             <div class="row ">
                                 <div class="col-6">
-                                    <div class="card border-0 shadow" style="width: 22rem; height: 17rem;">
-                                        <div class="card-body mt-4 ms-4 " style="font-family: 'Poppins', sans-serif; color: #61718a;">
+                                    <div class="card border-0 shadow" id="card-emer">
+                                        <div class="card-body mt-4 ms-4 "id="txt-poppins">
                                             <div class="row mb-2">
                                                 <div class="col-3">
                                                     <i class="bi bi-telephone-inbound-fill shadow border border-white border-3 rounded-3 px-3 py-2"
-                                                        style="font-size: 2rem; color: #3454d2; background-color: #f0f4ff;"></i>
+                                                        id="icon-blue-x"></i>
                                                 </div>
                                                 <div class="col-9">
                                                     <h1 class="fs-5">Call</h1>
@@ -392,21 +340,19 @@
                                             </div>
                                             <div class="row">
                                                 <div class="col-11 align-self-center text-center mt-4">
-                                                    <button class="btn py-4 px-5 me fs-5 fw-bold w-100"
-                                                        style="font-family: 'Poppins', sans-serif; color: #3454d2; background-color: #f0f4ff;" type="submit">Call Now
-                                                    </button>
+                                                    <button class="btn py-4 px-5 me fs-5 fw-bold w-100" id="btn-violet" type="submit">Call Now</button>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-6">
-                                    <div class="card border-0 shadow" style="width: 22rem; height: 17rem;">
-                                        <div class="card-body mt-4 ms-4 " style="font-family: 'Poppins', sans-serif; color: #61718a;">
+                                    <div class="card border-0 shadow" id="card-emer">
+                                        <div class="card-body mt-4 ms-4 "id="txt-poppins">
                                             <div class="row mb-2">
                                                 <div class="col-3">
                                                     <i class="bi bi-chat-dots-fill shadow border border-white border-3 rounded-3 px-3 py-2"
-                                                        style="font-size: 2rem; color: #3454d2; background-color: #f0f4ff;"></i>
+                                                        id="icon-blue-x"></i>
                                                 </div>
                                                 <div class="col-9">
                                                     <h1 class="fs-5">Chat</h1>
@@ -415,9 +361,7 @@
                                             </div>
                                             <div class="row">
                                                 <div class="col-11 align-self-center text-center mt-4">
-                                                    <button class="btn py-4 px-5 me fs-5 fw-bold w-100"
-                                                        style="font-family: 'Poppins', sans-serif; color: #ffffff; background-color: #2f4fcd;" type="submit">Chat Now
-                                                    </button>
+                                                    <button class="btn py-4 px-5 me fs-5 fw-bold w-100" id="btn-chat" type="submit">Chat Now</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -426,12 +370,12 @@
                             </div>
                             <div class="row mt-5">
                                 <div class="col-6">
-                                    <div class="card border-0 shadow" style="width: 22rem; height: 17rem;">
-                                        <div class="card-body mt-4 ms-4 " style="font-family: 'Poppins', sans-serif; color: #61718a;">
+                                    <div class="card border-0 shadow" id="card-emer">
+                                        <div class="card-body mt-4 ms-4 "id="txt-poppins">
                                             <div class="row mb-2">
                                                 <div class="col-3">
                                                     <i class="bi bi-camera-video-fill shadow border border-white border-3 rounded-3 px-3 py-2"
-                                                        style="font-size: 2rem; color: #3454d2; background-color: #f0f4ff;"></i>
+                                                        id="icon-blue-x"></i>
                                                 </div>
                                                 <div class="col-9">
                                                     <h1 class="fs-5">Video Call</h1>
@@ -440,21 +384,19 @@
                                             </div>
                                             <div class="row">
                                                 <div class="col-11 align-self-center text-center mt-4">
-                                                    <button class="btn py-4 px-5 me fs-5 fw-bold w-100"
-                                                        style="font-family: 'Poppins', sans-serif; color: #3454d2; background-color: #f0f4ff;" type="submit">Video Call Now
-                                                    </button>
+                                                    <button class="btn py-4 px-5 me fs-5 fw-bold w-100" id="btn-violet" type="submit">Video Call Now</button>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-6">
-                                    <div class="card border-0 shadow" style="width: 22rem; height: 17rem;">
-                                        <div class="card-body mt-4 ms-4 " style="font-family: 'Poppins', sans-serif; color: #61718a;">
+                                    <div class="card border-0 shadow" id="card-emer">
+                                        <div class="card-body mt-4 ms-4 "id="txt-poppins">
                                             <div class="row mb-2">
                                                 <div class="col-3">
                                                     <i class="bi bi-envelope-fill shadow border border-white border-3 rounded-3 px-3 py-2"
-                                                        style="font-size: 2rem; color: #3454d2; background-color: #f0f4ff;"></i>
+                                                        id="icon-blue-x"></i>
                                                 </div>
                                                 <div class="col-9">
                                                     <h1 class="fs-5">Message</h1>
@@ -463,9 +405,7 @@
                                             </div>
                                             <div class="row">
                                                 <div class="col-11 align-self-center text-center mt-4">
-                                                    <button class="btn py-4 px-5 me fs-5 fw-bold w-100"
-                                                        style="font-family: 'Poppins', sans-serif; color: #3454d2; background-color: #f0f4ff;" type="submit">Message Now
-                                                    </button>
+                                                    <button class="btn py-4 px-5 me fs-5 fw-bold w-100" id="btn-violet" type="submit">Message Now</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -477,66 +417,52 @@
                 </div>
             </div>
             <div class="col-5">
-                <img src="./doca.png" alt="Doctor" style="width: 100%; height: 100%; object-fit: cover;">
+                <img src="./doca.png" alt="Doctor" id="doca">
             </div>
-            <div class="position-absolute" id="tri_5" style=" width: 0; height: 0;
-                          border-top: 150px solid transparent;
-                          border-right: 150px solid #f4f6fb;
-                          border-bottom: 150px solid transparent; margin-top: -7.0%; margin-left: 90.8%;">
-            </div>
-            <!-- <div class="col-6 position-relative" style="background-color: #138be3;">
-                        <img src="./nurse.png" class="w-100 mt-5 position-absolute top-50 start-50 translate-middle" alt="">
-                    </div> -->
+            <div class="position-absolute" id="tri_5" ></div>
         </div>
     </section>
     <!-- =================== EMERGENCY =================== -->
     <section id="home6" class="container-fluid py-5 my-5"></section>
     <!-- =================== Footer =================== -->
-    <footer class="container-fluid" style="background-color: #eef3ff; ">
+    <footer class="container-fluid" id="foo-bg" >
         <div class="container-fluid" >
             <div class="row pt-5 align-items-center">
                 <div class="col-2 offset-1">
-                    <h1 class="fs-3" style="font-family: 'Montserrat', sans-serif; color: #2f4fcd;">Vaccination</h1>
-                    <p class="fs-5" style="font-family: 'Poppins', sans-serif; color: #61718a;">Our goal is to help the <br>world free from the <br>ongoing pandemic</p>
+                    <h1 class="fs-3" id="a1" >Vaccination</h1>
+                    <p class="fs-5"id="txt-poppins">Our goal is to help the <br>world free from the <br>ongoing pandemic</p>
                 </div>
                 <div class="col-2 offset-3 ">
-                    <h1 class="fs-3 pt-5" style="font-family: 'Montserrat', sans-serif; color: #1f3e72;">About</h1>
-                    <label class="text-capitalize fs-5 py-3" style="font-family: 'Poppins', sans-serif; color: #61718a;" for="">about us</label><br>
-                    <label class="text-capitalize fs-5 py-3" style="font-family: 'Poppins', sans-serif; color: #61718a;" for="">features</label><br>
-                    <label class="text-capitalize fs-5 py-3" style="font-family: 'Poppins', sans-serif; color: #61718a;" for="">news & blog</label>
+                    <h1 class="fs-3 pt-5" id="fight">About</h1>
+                    <label class="text-capitalize fs-5 py-3"id="txt-poppins" for="">about us</label><br>
+                    <label class="text-capitalize fs-5 py-3"id="txt-poppins" for="">features</label><br>
+                    <label class="text-capitalize fs-5 py-3"id="txt-poppins" for="">news & blog</label>
                 </div>
                 <div class="col-2">
-                    <h1 class="fs-3 pt-5" style="font-family: 'Montserrat', sans-serif; color: #1f3e72;">Company</h1>
-                    <label class="text-capitalize fs-5 py-3" style="font-family: 'Poppins', sans-serif; color: #61718a;" for="">how we work?</label><br>
-                    <label class="text-capitalize fs-5 py-3" style="font-family: 'Poppins', sans-serif; color: #61718a;" for="">capital</label><br>
-                    <label class="text-capitalize fs-5 py-3" style="font-family: 'Poppins', sans-serif; color: #61718a;" for="">security</label>
+                    <h1 class="fs-3 pt-5" id="fight">Company</h1>
+                    <label class="text-capitalize fs-5 py-3"id="txt-poppins" for="">how we work?</label><br>
+                    <label class="text-capitalize fs-5 py-3"id="txt-poppins" for="">capital</label><br>
+                    <label class="text-capitalize fs-5 py-3"id="txt-poppins" for="">security</label>
                 </div>
-                <div class="col-2" style="z-index: 2;">
-                    <h1 class="fs-3 pt-5" style="font-family: 'Montserrat', sans-serif; color: #1f3e72;">Support</h1>
-                    <label class="fs-5 py-3" style="font-family: 'Poppins', sans-serif; color: #61718a;" for="">FAQs</label><br>
-                    <label class="text-capitalize fs-5 py-3" style="font-family: 'Poppins', sans-serif; color: #61718a;" for="">support center</label><br>
-                    <label class="text-capitalize fs-5 py-3" style="font-family: 'Poppins', sans-serif; color: #61718a;" for="">contact us</label>
+                <div class="col-2" id="pos-index">
+                    <h1 class="fs-3 pt-5" id="fight">Support</h1>
+                    <label class="fs-5 py-3"id="txt-poppins" for="">FAQs</label><br>
+                    <label class="text-capitalize fs-5 py-3"id="txt-poppins" for="">support center</label><br>
+                    <label class="text-capitalize fs-5 py-3"id="txt-poppins" for="">contact us</label>
                 </div>
             </div>
             <div class="row pt-5 pb-5" >
                 <div class="col-7 offset-1">
-                    <label class="fs-5" style="font-family: 'Poppins', sans-serif; color: #61718a;" for="">@2021 Vaccination. All rights reserved</label>
+                    <label class="fs-5"id="txt-poppins" for="">@2021 Vaccination. All rights reserved</label>
                 </div>
-                <div class="col-2 col-xl-2 text-end" style="z-index: 2;">
-                    <label class="fs-5 " style="font-family: 'Poppins', sans-serif; color: #61718a;" for="">Terms & Agreements</label>
+                <div class="col-2 col-xl-2 text-end" id="pos-index">
+                    <label class="fs-5 "id="txt-poppins" for="">Terms & Agreements</label>
                 </div>
-                <div class="col-2 col-xl-2 text-start ps-2 ps-xl-2" style="z-index: 2;">
-                    <label class="fs-5" style="font-family: 'Poppins', sans-serif; color: #61718a;" for="">Privacy Policy</label>
+                <div class="col-2 col-xl-2 text-start ps-2 ps-xl-2" id="pos-index">
+                    <label class="fs-5"id="txt-poppins" for="">Privacy Policy</label>
                 </div>
             </div>
-            <div class="position-absolute" id="tri_6" style="width: 0;
-                    height: 0;
-                    z-index: 1;
-                    border-left: 250px solid transparent;
-                    border-right: 250px solid transparent;
-                    border-bottom: 250px solid #e2e9f9 ; opacity: 0.8;
-                    margin-top: -13.2%; margin-left: 71.8%;">
-            </div>
+            <div class="position-absolute" id="tri_6" ></div>
         </div>
         
     </footer >
